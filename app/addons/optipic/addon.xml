@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!--
+    Описание схемы аддона версии 2.0
+    Все параметры не отмеченные как необязательные должны быть определены в схеме.
+    @edition_type - Необязательный аттрибут доступный для любого элемента связанного с настройками. Определяет редакции в которых доступна та или иная настройка. Берётся либо значение текущего, либо от родителя, либо если вообще ничего нет, то будет определён как ROOT
+-->
+<addon scheme="2.0" edition_type="ROOT,ULT:VENDOR">
+    <!-- Идентификатор аддона, должен быть равен имени каталога, в котором лежит аддон -->
+    <id>optipic</id>
+    <!-- Версия аддона -->
+    <version>1.0</version>
+    <!-- Родной язык аддона (по умолчанию). Необязательный параметр, если не указан, то язык будет распознаваться как английский (EN). -->
+    <default_language>en</default_language>
+    <!-- Имя аддона на языке по умолчанию -->
+    <name>OptiPic</name>
+    <!-- Описание аддона на языке по умолчинию -->
+    <description>OptiPic.io - image optimization via smart CDN. The module automates the process of optimizing and compressing all images on the site according to the recommendations of Google PageSpeed Insights.</description>
+    <!-- Приоритет аддона. Чем выше, тем тот позже подключается -->
+    <priority>100</priority>
+    <!-- Статус который будет высатвлен после установки аддона (active/disabled). По умолчанию disabled. -->
+    <status>active</status>
+    <translations>
+        <!--
+            @for - указывает на свойство, которому предназначен перевод. Возможные варианты: name/description/tooltip. Необязательный. По умолчанию name.
+            @lang - код языка для которого этот перевод. Если языка с таким кодом в магазине нет, то перевод не установится.
+        -->
+        <item for="description" lang="ru">OptiPic.io - оптимизация изображений через умный CDN. Модуль автоматизирует процесс оптимизации и сжатия всех изображений на сайте согласно рекомендациям Google PageSpeed Insights.</item>
+    </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <!-- Список табов на странице настроек адона. -->
+        <sections>
+            <!-- Таб для настроек.
+                @id - текстовый итдентификатор. В дальнейшем к этой настройке можно будет обращаться через Registry::get('addons.[addon_id].[setting_id]')
+                @edition_type - список редакций в которых данный таб будет доступен. Необязательный.
+            -->
+            <section id="common">
+                <!-- Имя таба на языке по умолчанию -->
+                <name>Common settings</name>
+                <translations>
+                    <item lang="ru">Общие настройки</item>
+                </translations>
+                <!-- Список настроек в табе -->
+                <items>
+                    <!-- Настройки аддона
+                        @id - идентификатор настройки.
+                        @edition_type - список редакций в которых данная настройка будет доступна. Необязательный.
+                    -->
+                    <item id="header">
+                        <!-- Тип элемента:
+                            input, textarea, password, checkbox, selectbox, multiple select,
+                            multiple checkboxes, countries list, states list,
+                            file, info, header, template
+                        -->
+                        <type>header</type>
+                        <!-- Имя настройки на языке по умолчанию -->
+                        <name>OptiPic CDN Integration Settings</name>
+                        <!-- Переводы настройки -->
+                        <translations>
+                            <item lang="ru">Настройки интеграции OptiPic CDN</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="cdn_site_id">
+                        <type>input</type>
+                        <name>Site ID in your CDN OptiPic account</name>
+                        <!-- Всплывающая подсказка -->
+                        <tooltip><![CDATA[Register on <a href="https://optipic.io/" target="_blank">OptiPic.io</a> and add your site to your CDN account]]></tooltip>
+                        <translations>
+                            <item lang="ru">ID сайта в личном кабинете CDN OptiPic</item>
+                            <!-- Для подсказок тоже возможно задание переводов -->
+                            <item lang="ru" for="tooltip"><![CDATA[Зарегистрируйтесь на сайте <a href="https://optipic.io/" target="_blank">OptiPic.io</a> и добавьте свой сайт в личный кабинет CDN]]></item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="cdn_autoreplace_active">
+                        <type>checkbox</type>
+                        <name>Auto-replace image URLs</name>
+                        <translations>
+                            <item lang="ru">Автоматическая подмена URL изображений на сайте</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                    <item id="cdn_autoreplace_img_attrs">
+                        <type>input</type>
+                        <name>In what attributes of the &lt;img&gt; tag will auto-replace URL occur (comma-separated list)</name>
+                        <!-- Значение по умолчанию, для списков должен быть равен id варианта -->
+                        <default_value>src, data-lazy, data-full-img, data-original</default_value>
+                        <translations>
+                            <item lang="ru">В каких атрибутах тега &lt;img&gt; будет происходить автоподмена URL (список через запятую)</item>
+                        </translations>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>
