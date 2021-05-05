@@ -1,0 +1,41 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU"
+
+msgctxt "Addons::name::optipic"
+msgid "OptiPic"
+msgstr "OptiPic"
+
+msgctxt "Addons::description::optipic"
+msgid "OptiPic.io - image optimization via smart CDN. The module automates the process of optimizing and compressing all images on the site according to the recommendations of Google PageSpeed Insights."
+msgstr "OptiPic.io - оптимизация изображений через умный CDN. Модуль автоматизирует процесс оптимизации и сжатия всех изображений на сайте согласно рекомендациям Google PageSpeed Insights."
+
+msgctxt "SettingsSections::optipic::generic_settings"
+msgid "Generic settings"
+msgstr "Общие настройки"
+
+msgctxt "SettingsOptions::optipic::autoreplace_active"
+msgid "Enable auto-replace image URLs"
+msgstr "Автоматическая подмена URL изображений"
+
+msgctxt "SettingsOptions::optipic::site_id"
+msgid "Site ID in your CDN OptiPic account"
+msgstr "ID сайта в личном кабинете CDN OptiPic"
+
+msgctxt "SettingsOptions::optipic::domains"
+msgid "Domain list (if images are loaded via absolute URLs)"
+msgstr "Список доменов (если изображения грузятся через абсолютные URL)"
+
+msgctxt "SettingsOptions::optipic::exclusions_url"
+msgid "Site pages that do not include auto-change"
+msgstr "Страницы сайта, на которых не включать автоподмену"
+
+msgctxt "SettingsOptions::optipic::whitelist_img_urls"
+msgid "Replace only URLs of images starting with a mask"
+msgstr "Подменять только URL изображений, начинающихся с маски"
+
+msgctxt "SettingsOptions::optipic::srcset_attrs"
+msgid "List of 'srcset' attributes"
+msgstr "Список 'srcset' атрибутов"
