@@ -13,6 +13,7 @@ class Optipic
             'exclusions_url' => Registry::get('addons.optipic.exclusions_url')!='' ? explode("\n", Registry::get('addons.optipic.exclusions_url')) : array(),
             'whitelist_img_urls' => Registry::get('addons.optipic.whitelist_img_urls')!='' ? explode("\n", Registry::get('addons.optipic.whitelist_img_urls')) : array(),
             'srcset_attrs' => Registry::get('addons.optipic.srcset_attrs')!='' ? explode("\n", Registry::get('addons.optipic.srcset_attrs')) : array(),
+            'cdn_domain' => Registry::get('addons.optipic.cdn_domain'),
         );
     }
 

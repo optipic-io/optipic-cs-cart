@@ -39,3 +39,11 @@ msgstr "Подменять только URL изображений, начина
 msgctxt "SettingsOptions::optipic::srcset_attrs"
 msgid "List of 'srcset' attributes"
 msgstr "Список 'srcset' атрибутов"
+
+msgctxt "SettingsOptions::optipic::cdn_domain"
+msgid "CDNdomain"
+msgstr "CDN домен"
+
+msgctxt "Languages::optipic.cdn_domain_description"
+msgid "cdn_domain_description"
+msgstr "CDN домен: Домен через который будет работать CDN OptiPic. Вы можете использовать поддомен вашего домена (img.yourdomain.com, optipic.yourdomain.com и т.п.) вместо стандартного cdn.optipic.io. Для подключению своего поддомена обратитесь в техподдержку OptiPic."

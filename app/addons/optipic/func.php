@@ -35,6 +35,8 @@ function fn_optipic_settings_field_info() {
     
     $html = '';
     
+    $html .= '<div class="muted" style="margin: 20px 0;">'.__('optipic.cdn_domain_description').'</div>';
+    
     //$html .= var_export(\optipic\cdn\ImgUrlConverter::getDefaultSettings(), true);
     $defaultSettings = \optipic\cdn\ImgUrlConverter::getDefaultSettings();
     $defaultDomains = implode("\\n", $defaultSettings['domains']);
