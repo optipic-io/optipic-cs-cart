@@ -1,7 +1,7 @@
 # CS-Cart / OptiPic
 Addon for CS-Cart to integrate with OptiPic.io (automatic images optimization and compression service)
 
-[<img src="https://optipic.io/images/download-button-w200.png"/>](https://github.com/optipic-io/optipic-cs-cart/releases/download/1.15.0/optipic-cs-cart-1.15.0.zip)
+[<img src="https://optipic.io/images/download-button-w200.png"/>](https://github.com/optipic-io/optipic-cs-cart/releases/download/1.18.0/optipic-cs-cart-1.18.0.zip)
 
 ## How to use
 1. [Register](https://optipic.io/ru/register/?cdn) your account on OptiPic.io site.
