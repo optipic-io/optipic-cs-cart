@@ -31,7 +31,7 @@ function fn_optipic_settings_field_info() {
             
     $settings = $optipic->getSettings();
     
-    $srcJs = 'https://optipic.io/api/cp/stat?domain='.$currentHost.'&sid='.$settings['site_id'].'&cms=cscart&stype=cdn&append_to=%23content_optipic_generic_settings&version=1.21.0';
+    $srcJs = 'https://optipic.io/api/cp/stat?domain='.$currentHost.'&sid='.$settings['site_id'].'&cms=cscart&stype=cdn&append_to=%23content_optipic_generic_settings&version=1.25.0';
     
     $html = '';
     
