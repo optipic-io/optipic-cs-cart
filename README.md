@@ -1,6 +1,10 @@
 # WebP convert images CS-Cart in 2 clicks - OptiPic CDN ready plugin
 
-> Fully automated process for converting all png and jpeg images to WebP format to the requirements of Google Pagespeed Insights. Solves the problem 'Serve images in next-gen formats'. Easy connection to CS-Cart.
+> Fully automated process for converting all png and jpeg images to WebP format to the requirements of Google Pagespeed Insights.  
+> Solves the problem "Serve images in next-gen formats".  
+> Easy connection to CS-Cart. 
+
+[https://optipic.io/en/webp/cs-cart/](https://optipic.io/en/webp/cs-cart/)
 
 [![Download](https://optipic.io/images/download-button.png)](https://github.com/optipic-io/optipic-cs-cart/releases/download/1.25.0/optipic-cs-cart-1.25.0.zip)
 
@@ -33,6 +37,7 @@ If the optimized version is not yet ready at the time of the image request, the 
 [![Video instruction for configuring the module CS-Cart](https://img.youtube.com/vi/qCEYXqUX98c/0.jpg)](https://www.youtube.com/watch?v=qCEYXqUX98c)
 
 ## 5 easy steps to connect WebP to CS-Cart
+
 ### Step #1: Download plugin CS-Cart WebP
 Download and install the official CDN OptiPic plugin for CS-Cart on your site.
 
